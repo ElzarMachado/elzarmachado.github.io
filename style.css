@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding:20px 100px;
+    background: rgb(76, 76, 117);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.Elzar{
+    font-size:32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight:700;
+}
+
+.navbar a{
+    position:relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight:500;
+    text-decoration:none;
+    margin-left:40px;
+}
+
+.navbar a::before{
+    content:'';
+    position: absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:2px;
+    background: #fff;
+    transition: .3s;
+
+}
+
+.navbar a:hover::before{
+    width:100%;
+
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+body{
+    background-color:white ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height:100vh;
+
+
+}
+
+.container{
+    border: solid 1px rgba(255,255,255,0.2)
+}
+table{
+    color:rgb(0, 0, 0);
+    font-size:14px;
+    table-layout:fixed;
+    border-collapse: collapse;
+}
+thead{
+    background: rgba(83, 114, 206, 0.4);
+}
+th{
+    padding: 20px 15px;
+    font-weight: 700;
+
+}
+td{
+    padding: 15px;
+    border-bottom: solid 1px rgba(255,255,255,0.2)
+}
+tbody tr{
+    cursor: pointer;
+}
+tbody tr:hover {
+    background: rgba(107, 130, 197, 0.4) 
+}
+.features{
+    padding:20px;
+    display:flex;
+    flex-direction: row;
+}
+.features figure{
+    margin: auto;
+    text-align:center;
+    width: 200px;
+}
